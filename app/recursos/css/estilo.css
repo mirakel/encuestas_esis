@@ -1,0 +1,171 @@
+body{
+	padding-top: 60px;
+    font-size: 13px;
+}
+.btn{
+    font-size: 12px;
+}
+.breadcrumb {
+    background-color: #FBFBFB;
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #F5F5F5);
+    background-repeat: repeat-x;
+    border: 1px solid #DDDDDD;
+    box-shadow: 0 1px 0 #FFFFFF inset;
+    list-style: none outside none;
+    margin: 0 0 18px;
+    padding: 7px 14px;
+}
+/*================= Login =================================*/
+.login-container {
+    margin: 70px auto 0;
+    width: 295px;
+}
+.login-container .login-header {
+    background: -moz-linear-gradient(center top , #4A515B 0%, #3C4049 100%) repeat scroll 0 0 transparent;
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: 1em;
+    padding: 3px 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.login-header h3 {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 22px;
+}
+.login-container .login-content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    padding: 20px 20px 5px;
+}
+
+/*========================== box =======================*/
+.box {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color #DDDDDD #DDDDDD;
+    border-image: none;
+    border-radius: 3px 3px 3px 3px;
+    border-right: 1px solid #DDDDDD;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    margin: 15px 0; 
+}
+.box:before, .box:after {
+    content: "";
+    display: table;
+    line-height: 0;
+}
+.box:after {
+    clear: both;
+}
+.box h4.box-header {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #FBFBFB;
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #F5F5F5);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD -moz-use-text-color;
+    border-image: none;
+    border-style: solid none;
+    border-width: 1px 0;
+    box-shadow: 0 1px 0 #FFFFFF inset;
+    font-size: 13px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 7px;
+    size: 10px;
+}
+.box-content {
+    padding: 18px 12px 0;
+}
+.round-top {
+    border-radius: 3px 3px 0 0;
+}
+
+/*================ Datatables ======================*/
+.dataTables_wrapper{
+    display:table;
+    width:100%;
+}
+.dataTables_length {
+    width: 40%;
+    float: left;
+}
+div.dataTables_length select {
+    width: 75px;
+    font-size:12px;
+}
+.dataTables_filter {
+    width: 50%;
+    float: right;
+    display:block;
+}
+.dataTables_filter input {
+    width:97%;
+    float:none;
+    padding:3px 0 3px 4px;
+    background: url(../img/search_s.png) no-repeat 98% center #fff !important;
+}
+div.dataTables_info {
+    padding-top: 8px;
+}
+.dataTables_paginate {
+    width: 100%;
+    float: right;
+    text-align: right;  
+    padding:5px 0;
+}
+table.dataTable{
+    margin:0;
+}
+table.dataTable th:active {
+    outline: medium none;
+}
+.sort-index, .hidden {
+    left: -10000px;
+    position: absolute;
+    top: -10000px;
+    visibility: hidden;
+}
+.dataTables_wrapper .dataTables_paginate span.fg-button{
+    padding: 7px 14px;
+    line-height: 34px;
+    border: 1px solid #ddd;
+    border-left-width: 0;
+    color: #0088cc;
+    cursor:pointer;
+}
+.dataTables_wrapper .dataTables_paginate span.first{
+    border-left: 1px solid #ddd;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.dataTables_wrapper .dataTables_paginate span.last{
+    border-right: 1px solid #ddd;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.dataTables_wrapper .dataTables_paginate span.ui-state-disabled{
+    color: #999999;
+    background-color: transparent;
+    cursor: default;
+}
+.dataTables_wrapper .dataTables_paginate span span.ui-state-disabled{
+    background-color: #f5f5f5;
+    color: #999999;
+    cursor: default;
+}
