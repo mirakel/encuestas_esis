@@ -15,7 +15,7 @@
 				<div class="nav-collapse">
 					<ul class="nav">
 						<li class="active"><a href="index.php">Home</a></li>
-						<li><a href="encuestas.php">Encuestas</a></li>
+						<li><a href="encuestas">Encuestas</a></li>
 					</ul>
 				</div><!--/.nav-collapse -->
 			</div>

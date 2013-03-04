@@ -6,15 +6,17 @@
 		$password = mysql_real_escape_string(stripslashes($_POST['password']));	
 		$consulta = query("SELECT * FROM usuarios WHERE username = '$usuario' AND password = MD5('$password')");
 
-		var_dump($consulta);
+		
 		if($consulta){
 			session_start();
+			$_SESSION['session']=true;
 			$_SESSION['usuario_id']=$consulta['id'];
 			$url= URL_APP;
 			header("location:$url");
 		}
 		else{
-			header("location:index.php");
+			//header("location:index.php");
+			var_dump($consulta);
 		}
 	}
 

@@ -3,7 +3,7 @@ body{
     font-size: 13px;
 }
 .btn{
-    font-size: 12px;
+    font-size: 13px;
 }
 .breadcrumb {
     background-color: #FBFBFB;
@@ -22,6 +22,7 @@ body{
 }
 .login-container .login-header {
     background: -moz-linear-gradient(center top , #4A515B 0%, #3C4049 100%) repeat scroll 0 0 transparent;
+    background: #3C4049;
     border-radius: 5px 5px 5px 5px;
     margin-bottom: 1em;
     padding: 3px 20px;
@@ -42,15 +43,8 @@ body{
 
 /*========================== box =======================*/
 .box {
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    border-color: -moz-use-text-color #DDDDDD #DDDDDD;
-    border-image: none;
+    border: 1px solid #ddd;
     border-radius: 3px 3px 3px 3px;
-    border-right: 1px solid #DDDDDD;
-    border-style: none solid solid;
     border-width: 0 1px 1px;
     margin: 15px 0; 
 }
@@ -63,17 +57,11 @@ body{
     clear: both;
 }
 .box h4.box-header {
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
     background-color: #FBFBFB;
     background-image: -moz-linear-gradient(center top , #FFFFFF, #F5F5F5);
     background-repeat: repeat-x;
-    border-color: #DDDDDD -moz-use-text-color;
-    border-image: none;
-    border-style: solid none;
-    border-width: 1px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
     box-shadow: 0 1px 0 #FFFFFF inset;
     font-size: 13px;
     list-style: none outside none;
@@ -169,3 +157,82 @@ table.dataTable th:active {
     color: #999999;
     cursor: default;
 }
+/*================= Formulario encuesta ====================*/
+form{
+    margin: 0;
+}
+.form-actions{
+    padding: 19px 20px 5px;
+    margin-bottom: 0;
+}
+a.block-menu{
+    margin-right: 4px;
+}
+@media (max-width: 600px) {
+    .block-menu {
+        display: block;
+        margin-bottom: 5px;
+        padding: 6px 15px;
+        text-align: left;
+    }
+    .block-menu > button, button.block-menu {
+        width: 100%;
+    }
+    .block-hide-menu {
+        display: none;
+    }
+    .block-menu > button {
+        padding: 6px 15px;
+        text-align: left;
+    }
+    .block-menu > button .caret {
+        display: none;
+    }
+    .hide-screen-menu {
+        display: block;
+    }
+    .show-screen-menu-600 {
+        display: none !important;
+    }
+}
+/*===================== LISTADO DE OPCIONES ================================ */
+ul.listado {
+    margin:10px 0 20px;
+    padding:0;
+}
+ul.listado li a img{
+    width:140px;
+    height:120px;
+}
+ul.listado li {
+    display:block;
+    margin:0;
+    padding: 0 7px 5px;
+    position:relative;
+    border: 1px solid transparent;
+}
+ul.listado li a.delete {
+    background-repeat:no-repeat;
+    background-position:0 0;
+    display:block;
+    position:absolute;
+    text-indent:-9999px;
+    z-index:1;
+}
+ul.listado li:hover a.delete{
+    background-image:url(../img/icon_round_delete.png);
+    width:19px;
+    height:19px;
+    right:-5px;
+    top:-5px;
+}
+ul.listado li:hover {
+    border:1px solid #cccece;
+    background-color:#f8f8f8;
+    opacity: 0.7;
+    -webkit-box-shadow: 0px 3px 2px 1px rgba(0, 0, 0, 0.05);
+       -moz-box-shadow: 0px 3px 2px 1px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 3px 2px 1px rgba(0, 0, 0, 0.05);
+}
+div.opciones {margin: 6px 15px 0 15px;}
+
